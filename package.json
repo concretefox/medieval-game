@@ -1,0 +1,22 @@
+{
+  "name": "project6",
+  "version": "1.0.0",
+  "description": "OpenClassRoomsProject",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d build",   
+  "predeploy":"npm run build",
+  "deploy": "gh-pages -d build"
+  },
+
+
+  "author": "Jacques Vd Merwe",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
